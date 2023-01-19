@@ -152,6 +152,7 @@ function operadoresLogicos(num1, num2, num3) {
    // Si alguno de los argumentos es cero, retornar ---> "Error".
    // Si no se cumple ninguna de las condiciones anteriores, retornar false.
    // Tu código:
+
    if(num1 > num2 && num1 > num3 && num1 > 0){
       return "Numero 1 es mayor y positivo"
    }else if( num1 < 0 || num2 < 0 || num3 < 0){
@@ -173,39 +174,61 @@ function esPrimo(num) {
    // [Pista 2]: puedes resolverlo utilizando un `bucle for`.
    // [Nota]: los números negativos, 0 y 1 NO son números primos.
    // Tu código:
-   if(num === 0 || num == 1){
-      return false;
-   }
-    for (let i = 1; i < num; i++){
-      if (num  % i == 0 && num < 0){
-         return false ; 
-      }else  {
-         return true;
 
-      }  
+       
+      
+   if(num <= 1 ) {
+         
+       return false;
+     }   
+    for (var i = 2; i < num; i++){
+      if (num  % i == 0 ){
+         return false ; 
+         }
+      } 
+          return true;
    }
-}
+
+
 function esVerdadero(valor) {
    // Si "valor" es verdadero retornar "Soy verdadero".
    // Caso contrario, retornar "Soy falso".
    // Tu código:
    if ( valor == true){
-      return "soy verdadero";
+      return "Soy verdadero";
    }
-   return "soy falso"
+   return "Soy falso"
 }
 
 function tieneTresDigitos(num) {
    // Si el número recibido tiene tres dígitos retornar True.
    // Caso contrario, retornar False.
    // Tu código:
-}
 
+ var  nuevoString = num.toString();
+
+      if(nuevoString.length == 3){
+         return true;
+      } else {
+         return  false;
+      }
+   }
+ 
 function doWhile(num) {
    // Implementar una función que aumente el valor recibido en 5 hasta un límite de 8 veces.
    // Retornar el valor final.
    // Utilizar el bucle Do-While.
    // Tu código:
+
+   var contador = 0;
+   
+   do{
+      num = num + 5; 
+      contador ++;
+   } while (contador < 8);
+
+   return num;
+ 
 }
 
 /*⚠️ NO MODIFIQUES NADA DEBAJO DE ESTO ⚠️*/
