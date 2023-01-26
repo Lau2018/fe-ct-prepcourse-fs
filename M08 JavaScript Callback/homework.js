@@ -88,6 +88,8 @@ function filter(arrayOfStrings) {
     
    }
    return nuevoArreglo;
+   //usando el filter
+   //return arrayOfStrings.filter(string => string[0] === 'a'|| string.charAt(0));
 }
 
 /*⚠️ NO MODIFIQUES NADA DEBAJO DE ESTO ⚠️*/
