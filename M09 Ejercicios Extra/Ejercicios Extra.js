@@ -20,7 +20,20 @@ function numberOfCharacters(string) {
    // [EJEMPLO]: "adsjfdsfsfjsdjfhacabcsbajda" ---> { a: 5, b: 2, c: 2, d: 4, f: 4, h:1, j: 4, s: 5 }
    // Tu código:
 
-   let count = {};
+   let count={};// creo uno porque tengo que retonar uno 
+     string.split('');// lo convierto a un array
+       for(var i=0; i<string.length; i++){
+         string[i]
+
+       }
+   //let count = {};
+
+
+
+
+
+
+
   string.split('').forEach(char => {
     if(count[char]) {
       count[char]++;
